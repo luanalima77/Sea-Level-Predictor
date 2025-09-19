@@ -25,7 +25,11 @@ def draw_plot():
     plt.plot(x_2000, y_2000, label='Best fit (2000 onwards)', linewidth=2)
 
     # Add labels and title
-
+    plt.xlabel('Year')
+    plt.ylabel('Sea Level (inches)')
+    plt.title('Rise in Sea Level')
+    plt.legend()
+    plt.tight_layout()
     
     # Save plot and return data for testing (DO NOT MODIFY)
     plt.savefig('sea_level_plot.png')
